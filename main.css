@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #3a1c00, #1a0f00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+    background: rgba(58, 28, 0, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(58, 28, 0, 0.7);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(58, 28, 0, 1);
+}
+
+h1 {
+    font-size: 42px;
+    color: #ff8c00;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(255, 69, 0, 0.5);
+}
+
+p {
+    font-size: 20px;
+    color: #d4af37;
+    margin-bottom: 30px;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px rgba(58, 28, 0, 0.5);
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"] {
+    padding: 12px 15px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #d2691e;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    background: rgba(77, 38, 0, 0.8);
+    color: #f5f5f5;
+}
+
+.subscribe-form input[type="text"]:focus,
+.subscribe-form input[type="email"]:focus {
+    border-color: #ff8c00;
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.7);
+}
+
+.subscribe-form button {
+    padding: 12px 25px;
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(165, 42, 42, 0.7);
+    width: 100%;
+    max-width: 300px;
+}
+
+.subscribe-form button:hover {
+    background-color: #b22222;
+    box-shadow: 0 6px 15px rgba(139, 0, 0, 0.7);
+    transform: translateY(-2px);
+}
+
+.subscribe-form button:active {
+    background-color: #8b0000;
+    box-shadow: 0 4px 10px rgba(128, 0, 0, 0.7);
+    transform: translateY(2px);
+}
